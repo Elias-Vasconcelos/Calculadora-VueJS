@@ -42,8 +42,8 @@
         <option value="Dividir">Dividir</option>
       </select>
       <ul class="list-grup row">
-        <input class="form-control col" type="number" :value="estado.ValorA" @keyup="evento => estado.ValorA = evento.target.value" place-holder="escolha o Primeiro valor">
-        <input class="form-control col" type="number" :value="estado.ValorB" @keyup="evento => estado.ValorB = evento.target.value" place-holder="escolha o Segundo valor">
+        <input class="form-control col" type="number" :value="estado.ValorA" @keyup="evento => estado.ValorA =  parseInt(evento.target.value)" place-holder="escolha o Primeiro valor">
+        <input class="form-control col" type="number" :value="estado.ValorB" @keyup="evento => estado.ValorB =  parseInt(evento.target.value)" place-holder="escolha o Segundo valor">
       </ul>
         <span class="col btn btn-success" >O resutado é {{ estado.VAlorResultado }}</span>
       </form>
